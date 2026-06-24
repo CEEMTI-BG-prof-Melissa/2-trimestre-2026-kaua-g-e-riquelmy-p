@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <title>Formulário HTML</title><!--ACERTEI-->
+  <meta charset="UTF-8">
+</head><!--ACERTEI-->
+
+<body>
+  <h1>Cadastro de Usuário</h1><!--ACERTEI-->
+  <form action="cadastro.php" method="POST"><!--ACERTEI-->
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" name="nome"><!--ACERTEI-->
+    <br>
+    <label for="email">E-mail: </label>
+    <input type="email" id="email" name="email"><!--ACERTEI-->
+    <br>
+    <label for="senha">Senha :</label>
+    <input type="password" id="senha" name="senha"><!--ACERTEI-->
+    <br>
+    <label for="idade">idade: </label>
+    <input type="number" id="idade" name="idade">
+    <br>
+    <label for="nascimento">Data de nascimento: </label><!--ERREI-->
+    <input type="date" id="nascimento" name="data"><!--ACERTEI-->
+    <br>
+    <p>Turno:</p>
+    <input type="radio" name="turno" id="manha"> <label for="manha">Manhä </label>
+    <input type="radio" name="turno" id="tarde"> <label for="tarde">Tarde </label><!--ACERTEI²-->
+    <input type="radio" name="turno" id="noite"> <label for="noite">Noite </label>
+    <br>
+    <p>Areas de interesse:</p>
+    <input type="checkbox" name="area" id="programacao"> <label for="programacao">Programação </label>
+    <input type="checkbox" name="area" id="design"> <label for="design">Design </label>
+    <input type="checkbox" name="area" id="redes"> <label for="redes">Redes </label><!--ACERTEI-->
+    <br>
+    <input type="submit" value="Enivar"><!--ACERTEI-->
+    <input type="reset" value="Limpar"><!--ACERTEI-->
+  </form>
+</body>
+</html>
